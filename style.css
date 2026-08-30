@@ -1,0 +1,111 @@
+/* The Crew Compass — design A (goedgekeurd 29 aug 2026) */
+:root{--navy:#0E1B3D;--navy2:#16264F;--off:#F8F8F5;--grey:#5A6885;--grey2:#C3C8D4;
+  --mint:#7FD1B4;--mintd:#3D7A68;--rand:#E4E7EE}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Montserrat',-apple-system,'Helvetica Neue',Arial,sans-serif;
+  color:var(--navy);background:var(--off);font-size:16px;line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+
+/* navigatie */
+header{background:var(--off);border-bottom:1px solid var(--rand)}
+.nav{display:flex;align-items:center;gap:13px;padding:17px 0}
+.nav img{width:34px;height:34px;border-radius:8px}
+.nav .merk{font-weight:600;letter-spacing:3px;font-size:13.5px;text-decoration:none}
+.nav nav{margin-left:auto;display:flex;gap:22px;font-size:13px;align-items:center;flex-wrap:wrap}
+.nav nav a{text-decoration:none;color:var(--grey);font-weight:600}
+.nav nav a:hover,.nav nav a.aan{color:var(--navy)}
+.nav nav a.taal{border:1px solid var(--grey2);border-radius:999px;padding:2px 11px}
+
+/* hero */
+.hero{background:linear-gradient(155deg,var(--navy2),var(--navy) 70%);color:#fff;
+  overflow:hidden;position:relative}
+.hero .kompas{position:absolute;right:-120px;top:-120px;width:520px;height:520px;opacity:.06}
+.hgrid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;
+  padding:66px 0 80px;position:relative}
+.hgrid h1{font-size:clamp(30px,4.4vw,46px);font-weight:800;letter-spacing:2.5px;line-height:1.15}
+.hgrid .tag{color:var(--mint);letter-spacing:5px;font-size:12px;margin:14px 0 20px;
+  text-transform:uppercase;font-weight:700}
+.hgrid p.uitleg{color:#D6DBE6;max-width:460px;margin-bottom:30px}
+.phone{width:262px;border-radius:40px;border:9px solid #0A1329;overflow:hidden;background:#000;
+  box-shadow:0 30px 70px rgba(10,19,41,.45)}
+.phone img{width:100%;display:block}
+.hgrid .phone{justify-self:center;transform:rotate(3deg)}
+.stats{display:flex;gap:34px;margin-top:34px;color:#fff}
+.stats b{display:block;font-size:24px;color:var(--mint)}
+.stats span{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--grey2)}
+
+/* knoppen */
+.knop{display:inline-block;background:var(--navy);color:#fff;font-weight:700;text-decoration:none;
+  padding:15px 30px;border-radius:14px;font-size:15px;border:none;cursor:pointer;font-family:inherit}
+.knop.wit{background:#fff;color:var(--navy)}
+.knop.mint{background:var(--mint);color:var(--navy)}
+.knop.omlijnd{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+
+/* secties */
+.sectie{padding:64px 0}
+.sectie h2{font-size:23px;font-weight:700;margin-bottom:8px}
+.sectie p.sub{color:var(--grey);font-size:14.5px;margin-bottom:28px;max-width:640px}
+.kaarten{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.kaart{background:#fff;border:1px solid var(--rand);border-radius:16px;padding:24px}
+.kaart .ico{width:40px;height:40px;border-radius:11px;background:#E9F3EE;display:flex;
+  align-items:center;justify-content:center;font-size:19px;margin-bottom:13px}
+.kaart h3{font-size:15.5px;margin-bottom:7px;font-weight:700}
+.kaart p{font-size:13.5px;color:var(--grey)}
+
+/* app + screenshot naast elkaar */
+.duo{display:grid;grid-template-columns:1fr auto;gap:44px;align-items:center}
+.duo .phone{transform:rotate(-3deg)}
+.punten{list-style:none}
+.punten li{padding:9px 0 9px 34px;position:relative;font-size:14.5px}
+.punten li::before{content:"✓";position:absolute;left:0;top:9px;width:22px;height:22px;
+  background:#E9F3EE;color:var(--mintd);border-radius:7px;display:flex;align-items:center;
+  justify-content:center;font-size:12px;font-weight:800}
+
+/* aanvraag andere maatschappij */
+.aanvraag{background:var(--navy);color:#fff;border-radius:20px;padding:36px}
+.aanvraag h2{color:#fff}
+.aanvraag p.sub{color:#D6DBE6}
+.aanvraag form{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.aanvraag label{font-size:12.5px;font-weight:700;letter-spacing:.5px;display:block;margin-bottom:6px;color:var(--grey2)}
+.aanvraag input[type=text],.aanvraag input[type=email],.aanvraag input[type=url]{
+  width:100%;padding:13px 15px;border-radius:11px;border:none;font-family:inherit;font-size:14px}
+.aanvraag .vol{grid-column:1/-1}
+.upload{border:1.5px dashed rgba(255,255,255,.4);border-radius:11px;padding:15px;
+  font-size:13.5px;color:#D6DBE6;background:rgba(255,255,255,.05);cursor:pointer;display:block}
+.upload input{display:none}
+.upload b{color:#fff}
+.ok{color:var(--mint);font-weight:700;margin-top:12px}
+
+/* tekstpagina's (faq, support, juridisch) */
+.tekst{max-width:720px;margin:0 auto;padding:52px 24px 80px}
+.tekst h1{font-size:28px;font-weight:800;margin-bottom:6px}
+.tekst p.intro{color:var(--grey);margin-bottom:34px}
+.tekst h2{font-size:17px;font-weight:700;margin:30px 0 8px}
+.tekst p,.tekst li{font-size:14.5px;color:#33415E}
+.tekst ul{padding-left:20px;margin:8px 0}
+.tekst .blok{background:#fff;border:1px solid var(--rand);border-radius:14px;padding:20px 22px;margin-bottom:12px}
+.tekst .blok h2{margin-top:0}
+.tekst small{color:var(--grey)}
+
+footer{padding:36px 0 46px;color:var(--grey);font-size:12.5px;text-align:center;
+  border-top:1px solid var(--rand);margin-top:20px}
+footer .links{margin-top:8px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+footer a{color:var(--grey)}
+
+@media(max-width:820px){
+  .hgrid{grid-template-columns:1fr}
+  .hgrid .phone{display:none}
+  .kaarten{grid-template-columns:1fr}
+  .duo{grid-template-columns:1fr}
+  .duo .phone{display:none}
+  .aanvraag form{grid-template-columns:1fr}
+}
+
+/* rondje door de app — drie extra schermen met bijschrift */
+.tour{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;justify-items:center}
+.tour .phone{width:208px;border-width:7px;border-radius:32px;transform:none;
+  box-shadow:0 18px 44px rgba(10,19,41,.25)}
+.tour h3{font-size:14.5px;font-weight:700;margin:16px 0 4px;text-align:center}
+.tour p{font-size:13px;color:var(--grey);text-align:center;max-width:250px}
+@media(max-width:820px){.tour{grid-template-columns:1fr}}
