@@ -94,7 +94,15 @@ footer .links{margin-top:8px;display:flex;gap:18px;justify-content:center;flex-w
 footer a{color:var(--grey)}
 
 @media(max-width:820px){
-  .hgrid{grid-template-columns:1fr}
+  /* telefoon: vaste zijmarge en nooit horizontaal scrollen (feedback 10 sep) */
+  body{overflow-x:hidden}
+  .wrap{padding:0 20px}
+  .hgrid{grid-template-columns:1fr;padding:44px 0 56px}
+  .hgrid h1{letter-spacing:1.5px}
+  .hgrid .tag{letter-spacing:3px}
+  .knoppen{flex-wrap:wrap}
+  .knoppen .knop{flex:1 1 100%;text-align:center}
+  .cijfers,.stats{gap:18px}
   .hgrid .phone{display:none}
   .kaarten{grid-template-columns:1fr}
   .duo{grid-template-columns:1fr}
