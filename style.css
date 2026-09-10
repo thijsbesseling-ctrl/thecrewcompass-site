@@ -22,7 +22,7 @@ header{background:var(--off);border-bottom:1px solid var(--rand)}
   overflow:hidden;position:relative}
 .hero .kompas{position:absolute;right:-120px;top:-120px;width:520px;height:520px;opacity:.06}
 .hgrid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;
-  padding:66px 0 80px;position:relative}
+  padding:66px 24px 80px;position:relative}
 .hgrid h1{font-size:clamp(30px,4.4vw,46px);font-weight:800;letter-spacing:2.5px;line-height:1.15}
 .hgrid .tag{color:var(--mint);letter-spacing:5px;font-size:12px;margin:14px 0 20px;
   text-transform:uppercase;font-weight:700}
@@ -97,7 +97,8 @@ footer a{color:var(--grey)}
   /* telefoon: vaste zijmarge en nooit horizontaal scrollen (feedback 10 sep) */
   body{overflow-x:hidden}
   .wrap{padding:0 20px}
-  .hgrid{grid-template-columns:1fr;padding:44px 0 56px}
+  .hgrid{grid-template-columns:1fr;padding:44px 20px 56px}
+  .hgrid .knop{display:block;width:100%;margin:0 0 10px !important;text-align:center}
   .hgrid h1{letter-spacing:1.5px}
   .hgrid .tag{letter-spacing:3px}
   .knoppen{flex-wrap:wrap}
