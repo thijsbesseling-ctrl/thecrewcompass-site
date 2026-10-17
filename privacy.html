@@ -11,32 +11,57 @@
 
 <div class="tekst">
   <h1>Privacy</h1>
-  <p class="intro">The short version: your roster stays on your phone, we store as little as possible, and we never sell data. The details:</p>
+  <p class="intro">The short version: your roster stays on your phone, we store as little as possible, everything lives in the EU, and we never sell data. Below is exactly what does happen.</p>
 
   <h2>Who we are</h2>
-  <p>The Crew Compass is an independent app made by crew, based in the Netherlands. Contact for anything privacy-related: <a href="mailto:support@thecrewcompass.app">support@thecrewcompass.app</a>.</p>
+  <p>The Crew Compass is an independent app made by crew, based in the Netherlands. The Crew Compass is the controller for your data. Contact for anything privacy-related: <a href="mailto:support@thecrewcompass.app">support@thecrewcompass.app</a>.</p>
 
-  <h2>Your roster</h2>
-  <p>If you link your roster calendar or upload a roster, it is read <em>on your device only</em>. The app extracts nightstops (airport + dates) to show your next destination. Roster contents are never uploaded to our servers.</p>
-
-  <h2>What we do store</h2>
+  <h2>Who the app is for and who can get in</h2>
   <ul>
-    <li><b>Account:</b> your email address and chosen display name, to sign you in and sync your favourites.</li>
-    <li><b>Contributions:</b> places, photos, tips, hotel details and route corrections you add to the shared guide — with your display name, or anonymously if you choose so.</li>
-    <li><b>Chats:</b> messages you send in flight and group chats, visible to the participants.</li>
-    <li><b>Feedback:</b> messages and screenshots you send via Feedback.</li>
+    <li>You can only sign in with the work e-mail address of a supported airline. Other addresses are rejected at sign-up. Your work address is the key that keeps outsiders out.</li>
+    <li>You sign in with a one-time code sent by e-mail. There is no password that could leak.</li>
+    <li>The app is unlisted in the App Store and can only be installed via a direct link.</li>
+    <li>Everything in the app, including hotel details and destination information, is only visible to signed-in colleagues. Without an account you see nothing.</li>
   </ul>
 
-  <h2>Airline requests via this website</h2>
-  <p>If you request support for your airline, we store your airline, base, email and — if you attach them — your roster PDF or calendar link. These are stored privately, used only to build support for your airline and to let you know when it's ready, and deleted afterwards on request.</p>
+  <h2>Your roster</h2>
+  <p>If you link your roster calendar or upload a roster PDF, it is read <em>on your device</em>. The app only extracts roster lines: flights, hotels, taxis and report times. Private appointments and anything that is not roster are skipped and never stored or sent.</p>
+  <p>One thing from your roster goes to our server: for each flight, the flight number, date and route, together with your display name. That is how you find your crew in the flight chat. Your nightstops, hotel nights, taxi and report times stay on your phone. Your calendar link and your roster PDF are never sent to us.</p>
 
-  <h2>Where it lives</h2>
-  <p>Data is stored with Supabase on servers in the EU. We use no advertising, no trackers, and no analytics beyond what Apple provides for TestFlight builds.</p>
+  <h2>What we store</h2>
+  <ul>
+    <li><b>Account:</b> your e-mail address, your chosen display name and your rank (for example CA or FO), to sign you in and sync your favourites and lists.</li>
+    <li><b>Flights for chats:</b> flight number, date and route of your upcoming flights (see above).</li>
+    <li><b>Contributions:</b> places, photos, tips, reviews, hotel details and route corrections you add to the shared guide, with your display name or anonymously if you choose so.</li>
+    <li><b>Chats:</b> messages you send in flight and group chats, visible to the participants.</li>
+    <li><b>Notifications:</b> a device token so we can send push notifications, and your notification settings.</li>
+    <li><b>Feedback:</b> messages and screenshots you send via Feedback.</li>
+    <li><b>Requests via this website:</b> if you request support for your airline, we keep your airline, base, e-mail address and, if you attach them, your roster PDF or calendar link. These are stored privately, used only to set up your airline and to let you know when it is ready, and deleted afterwards on request.</li>
+  </ul>
+
+  <h2>Where it lives and who can access it</h2>
+  <ul>
+    <li><b>Supabase</b> (database, photo storage, sign-in): servers in Frankfurt, Germany. Supabase is a US company; the data is stored in the EU and a GDPR data processing agreement is in place.</li>
+    <li><b>Resend</b> (sending the sign-in e-mail): processes only your e-mail address and the one-time code. Resend is a US company; a GDPR data processing agreement is in place.</li>
+    <li><b>Apple and Google</b> (push notifications): receive only a device token and the content of the notification.</li>
+    <li><b>Stadia Maps</b> (map tiles): receives your IP address when a map loads, like any website you visit. No personal data beyond that.</li>
+    <li><b>Open-Meteo</b> (weather at your nightstop): receives only the coordinates of the crew hotel, nothing about you.</li>
+  </ul>
+  <p>We use no advertising, no trackers, no analytics and no crash reporting. Only Apple provides usage figures for TestFlight builds.</p>
+
+  <h2>How long we keep it</h2>
+  <p>Your account data, flights and settings are kept as long as your account exists. You can delete your account yourself in the app, under Profile. That removes your personal data. Contributions you posted anonymously and chat messages participants have already received may remain; they are no longer linked to you.</p>
+
+  <h2>Security</h2>
+  <p>All connections are encrypted. Access rules in the database decide per user what you may read and write; only you can change your own data. No passwords are stored.</p>
 
   <h2>Your rights</h2>
-  <p>You can request access to, correction of, or deletion of your data at any time via <a href="mailto:support@thecrewcompass.app">support@thecrewcompass.app</a>. Deleting your account removes your personal data; anonymous contributions to the shared guide may remain.</p>
+  <p>You can request access to, correction of, or deletion of your data at any time via <a href="mailto:support@thecrewcompass.app">support@thecrewcompass.app</a>. We respond within a month. If you disagree with how we handle your data, you can file a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens).</p>
 
-  <p><small>Last updated: 29 August 2026</small></p>
+  <h2>Changes</h2>
+  <p>If anything material changes in what we store or whom we work with, we update this page and announce it in the app.</p>
+
+  <p><small>Last updated: 17 October 2026</small></p>
 </div>
 
 <footer><div class="wrap">
